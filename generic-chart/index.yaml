@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  generic-chart:
+  - apiVersion: v2
+    created: "2025-04-23T11:53:28.332778167+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 26080dd348c843cd2366930b26aea29163bca0358d0c4bf4072f622c587c4424
+    name: generic-chart
+    type: library
+    urls:
+    - https://saichand9642.github.io/helm-generic-chart/generic-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-23T11:53:28.33239+05:30"
