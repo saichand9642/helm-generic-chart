@@ -1,0 +1,16 @@
+{{- define "generic.service" -}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .name }}
+  labels:
+    app: {{ .name }}
+spec:
+  selector:
+    app: {{ .name }}
+  ports:
+    - protocol: TCP
+      port: {{ .servicePort }}
+      targetPort: {{ .targetPort }}
+{{- end -}}
+

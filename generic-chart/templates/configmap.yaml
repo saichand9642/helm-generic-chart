@@ -1,0 +1,11 @@
+{{- define "generic.configmap" -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .name }}-config
+data:
+{{- range $key, $value := .data }}
+  {{ $key }}: {{ quote $value }}
+{{- end }}
+{{- end -}}
+
